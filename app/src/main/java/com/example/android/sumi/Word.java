@@ -1,5 +1,7 @@
 package com.example.android.sumi;
 
+import android.widget.ImageView;
+
 /**
  * Created by android on 17-02-2017.
  */
@@ -11,6 +13,9 @@ public class Word {
     /** Miwok translation for the word */
     private String mSumiTranslation;
 
+    //image resource id
+    private int mImageResourceID = NO_IMAGE_PREVIEW;
+    private static final int NO_IMAGE_PREVIEW =-1;
     /**
      * Create a new Word object.
      *
@@ -21,6 +26,11 @@ public class Word {
     public Word(String defaultTranslation, String sumiTranslation) {
         mDefaultTranslation = defaultTranslation;
         mSumiTranslation = sumiTranslation;
+    }
+    public Word(String defaultTranslation, String sumiTranslation , int ImageResourceID) {
+        mDefaultTranslation = defaultTranslation;
+        mSumiTranslation = sumiTranslation;
+        mImageResourceID = ImageResourceID;
     }
 
     /**
@@ -35,5 +45,14 @@ public class Word {
      */
     public String getSumiTranslation() {
         return mSumiTranslation;
+    }
+
+    public int getmImageResourceID(){
+        return mImageResourceID;
+    }
+
+    public boolean hasImage(){
+
+        return mImageResourceID != NO_IMAGE_PREVIEW;
     }
 }
