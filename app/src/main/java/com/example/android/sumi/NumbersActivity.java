@@ -23,7 +23,7 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("Eight","Tache",R.drawable.number_eight));
         words.add(new Word("Nine","Tuku",R.drawable.number_nine));
         words.add(new Word("Ten","Chixi",R.drawable.number_ten));
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words,R.color.category_numbers);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
          }

@@ -17,7 +17,7 @@ public class PhrasesAcitivity extends AppCompatActivity {
         words.add(new Word("where are you going?","Khila ii che ne?"));
         words.add(new Word("My name is...","E je nah..."));
         words.add(new Word("Come here.","Hi la e xi"));
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words,R.color.category_phrases);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
     }
