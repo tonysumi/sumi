@@ -12,7 +12,7 @@ public class Word {
 
     /** Miwok translation for the word */
     private String mSumiTranslation;
-
+    private int mAudioResourceId;
     //image resource id
     private int mImageResourceID = NO_IMAGE_PREVIEW;
     private static final int NO_IMAGE_PREVIEW =-1;
@@ -23,14 +23,16 @@ public class Word {
      *                           (such as English)
      * @param sumiTranslation is the word in the Sumi language
      */
-    public Word(String defaultTranslation, String sumiTranslation) {
+    public Word(String defaultTranslation, String sumiTranslation, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mSumiTranslation = sumiTranslation;
+        mAudioResourceId = audioResourceId;
     }
-    public Word(String defaultTranslation, String sumiTranslation , int ImageResourceID) {
+    public Word(String defaultTranslation, String sumiTranslation , int ImageResourceID, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mSumiTranslation = sumiTranslation;
         mImageResourceID = ImageResourceID;
+        mAudioResourceId = audioResourceId;
     }
 
     /**
@@ -55,4 +57,8 @@ public class Word {
 
         return mImageResourceID != NO_IMAGE_PREVIEW;
     }
+    public int getmAudioResourceId(){
+        return mAudioResourceId;
+    }
+
 }

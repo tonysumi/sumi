@@ -8,52 +8,51 @@
     android:background="@color/tan_background"
     android:orientation="vertical"
     tools:context="com.example.android.sumi.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_numbers">
+        <TextView
+            android:id="@+id/numbers"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_numbers" />
+    </FrameLayout>
 
-    <TextView
-        android:id="@+id/numbers"
-        style="@style/CategoryStyle"
-        android:background="@color/category_numbers"
-        android:text="@string/category_numbers"
-        android:elevation="16dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp" />
+    <!-- Family category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_family">
+        <TextView
+            android:id="@+id/family"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_family" />
+    </FrameLayout>
 
-    <TextView
-        android:id="@+id/family"
-        style="@style/CategoryStyle"
-        android:background="@color/category_family"
-        android:text="@string/category_family"
-        android:elevation="16dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp" />
+    <!-- Colors category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_colors">
+        <TextView
+            android:id="@+id/colors"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_colors" />
+    </FrameLayout>
 
-    <TextView
-        android:id="@+id/colors"
-        style="@style/CategoryStyle"
-        android:background="@color/category_colors"
-        android:text="@string/category_colors"
-        android:elevation="16dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp" />
-
-    <TextView
-        android:id="@+id/phrases"
-        style="@style/CategoryStyle"
-        android:background="@color/category_phrases"
-        android:text="@string/category_phrases"
-        android:elevation="16dp"
-        android:layout_margin="4dp" />
-
+    <!-- Phrases category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_phrases">
+        <TextView
+            android:id="@+id/phrases"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_phrases" />
+    </FrameLayout>
 </LinearLayout>
+
