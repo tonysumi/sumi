@@ -17,10 +17,6 @@
             </intent-filter>
 
         </activity>
-        <activity android:name="com.example.android.sumi.NumbersActivity" />
-        <activity android:name="com.example.android.sumi.PhrasesAcitivity" />
-        <activity android:name="com.example.android.sumi.ColorsActivity" />
-        <activity android:name="com.example.android.sumi.FamilyActivity"></activity>
     </application>
 
 </manifest>

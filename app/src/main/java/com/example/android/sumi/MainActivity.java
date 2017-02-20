@@ -17,17 +17,13 @@ package com.example.android.sumi;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-    TextView numbers;
-    TextView family;
-    TextView colors;
-    TextView phrases;
-
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,38 +31,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
-
-        numbers = (TextView) findViewById(R.id.numbers);
-        numbers.setOnClickListener(this);
-        family = (TextView) findViewById(R.id.family);
-        family.setOnClickListener(this);
-        colors = (TextView) findViewById(R.id.colors);
-        colors.setOnClickListener(this);
-        phrases = (TextView) findViewById(R.id.phrases);
-        phrases.setOnClickListener(this);
-
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.numbers:
-                Intent numberListIntent = new Intent(this,NumbersActivity.class);
-                startActivity(numberListIntent);
-                break;
-            case R.id.family:
-                Intent familyListIntent = new Intent(this,FamilyActivity.class);
-                startActivity(familyListIntent);
-                break;
-            case R.id.colors:
-                Intent colorsListIntent = new Intent(this,ColorsActivity.class);
-                startActivity(colorsListIntent);
-                break;
-            case R.id.phrases:
-                Intent phraseListIntent = new Intent(this,PhrasesAcitivity.class);
-                startActivity(phraseListIntent);
-                break;
-        }
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
 
     }
 }
