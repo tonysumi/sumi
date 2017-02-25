@@ -49,4 +49,3 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         return 4;
     }
 }
-

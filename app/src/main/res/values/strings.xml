@@ -27,5 +27,6 @@
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">Family</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
