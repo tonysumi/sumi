@@ -5,11 +5,12 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.example.android.miwok"
+        applicationId "com.example.android.sumi"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -25,4 +26,7 @@ dependencies {
     compile 'com.android.support:support-v4:23.4.0'
     compile 'com.android.support:design:23.4.0'
     testCompile 'junit:junit:4.12'
+    compile 'com.google.firebase:firebase-messaging:10.2.0'
 }
+apply plugin: 'com.google.gms.google-services'
+

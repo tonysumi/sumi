@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "820132559467",
+    "firebase_url": "https://sumi-80a33.firebaseio.com",
+    "project_id": "sumi-80a33",
+    "storage_bucket": "sumi-80a33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820132559467:android:07d45dd73f6ff375",
+        "android_client_info": {
+          "package_name": "com.example.android.sumi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820132559467-7flq6f8hkdh49n9kmj495usa9lt6j24i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt1oc49dMB0Q8cZoT1GjQQhmLo6VdaPVQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
