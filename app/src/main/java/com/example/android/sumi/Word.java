@@ -3,7 +3,7 @@ package com.example.android.sumi;
 import android.widget.ImageView;
 
 /**
- * Created by android on 17-02-2017.
+ * Created by android on 17-02-2018.
  */
 
 public class Word {
